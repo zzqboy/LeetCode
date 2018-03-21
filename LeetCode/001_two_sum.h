@@ -21,7 +21,7 @@ public:
 				if ((*i + *j) == target)
 				{
 					cout << *i << " " << *j << endl;
-					result = { i - begin(nums), j - begin(nums) };
+					result = { int(i - begin(nums)), int(j - begin(nums)) };
 					return result;
 				}
 			}
@@ -44,11 +44,11 @@ public:
 			if (index == end(complete_map))
 			{
 				cout << target - *i << " " << i - begin(nums) << endl;
-				complete_map[target - *i] = i - begin(nums);
+				complete_map[target - *i] = int(i - begin(nums));
 			}
 			else
 			{
-				result = { complete_map[*i], i - begin(nums) };
+				result = { complete_map[*i], int(i - begin(nums)) };
 			}
 		}
 
