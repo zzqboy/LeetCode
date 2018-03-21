@@ -1,10 +1,10 @@
-/*!
+ï»¿/*!
  * \class
  *
  * \brief add two numbers
  *
  * \author zzqboy
- * \date ÈýÔÂ 2018
+ * \date ä¸‰æœˆ 2018
  */
 #include <iostream>
 #include <stdio.h>

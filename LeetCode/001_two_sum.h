@@ -1,8 +1,8 @@
-/*!
+ï»¿/*!
  * \file 001_two_sum.cpp
  * \brief two_sum
  * \author zzqboy
- * \date ÈýÔÂ 2018
+ * \date ä¸‰æœˆ 2018
  */
 #include <vector>
 #include <iostream>
@@ -31,7 +31,7 @@ public:
 	}
 };
 
-// o(n)½â·¨
+// o(n)è§£æ³•
 class Solution2 {
 public:
 	vector<int> twoSum(vector<int>& nums, int target) {
