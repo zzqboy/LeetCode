@@ -1,11 +1,9 @@
 ﻿/*!
- * \class
- *
- * \brief add two numbers
- *
- * \author zzqboy
- * \date 三月 2018
- */
+* \file add two numbers
+* \brief two_sum
+* \author zzqboy
+* \date 三月 2018
+*/
 #include <iostream>
 #include <stdio.h>
 

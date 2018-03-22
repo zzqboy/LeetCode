@@ -1,10 +1,9 @@
-#include "001_two_sum.h"
+#include <003_Longest_Substring.h>
 #include <iostream>
 
 int main()
 {
-	Solution2 test;
-	vector<int> one{ 2, 5, 5, 11 };
-	vector<int> result = test.twoSum(one, 10);
+	Solution test;
+	cout << test.lengthOfLongestSubstring("tmmzuxt") << endl;
 	return 0;
 }

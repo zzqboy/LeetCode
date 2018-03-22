@@ -15,16 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="001_two_sum.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="002_add_two_numbers.h">
+    <ClCompile Include="003_Longest_Substring.h">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="001_Two_Sum.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="002_Add_Two_Numbers.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
