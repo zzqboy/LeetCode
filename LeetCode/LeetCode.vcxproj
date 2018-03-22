@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{83BED59D-043C-4051-8D42-1DAB3A2CDF74}</ProjectGuid>
+    <ProjectGuid>{E3576895-0312-4ED8-AA5A-B09F9C70904D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LeetCode</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
@@ -89,6 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -102,7 +103,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -144,12 +144,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="003_Longest_Substring.h" />
-    <ClCompile Include="test.cpp" />
+    <ClInclude Include="001_two_sum.h" />
+    <ClInclude Include="002_add_two_numbers.h" />
+    <ClInclude Include="003_Longest_Substring.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="001_Two_Sum.h" />
-    <ClInclude Include="002_Add_Two_Numbers.h" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

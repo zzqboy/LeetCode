@@ -4,6 +4,6 @@
 int main()
 {
 	Solution test;
-	cout << test.lengthOfLongestSubstring("tmmzuxt") << endl;
+	cout << test.lengthOfLongestSubstring("pwwkew") << endl;
 	return 0;
 }
