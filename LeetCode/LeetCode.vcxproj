@@ -148,6 +148,9 @@
     <ClInclude Include="002_add_two_numbers.h" />
     <ClInclude Include="003_Longest_Substring.h" />
     <ClInclude Include="004_Median_of_Two_Sorted_Arrays.h" />
+    <ClInclude Include="005_Longest_Palindromic_Substring.h" />
+    <ClInclude Include="006_ZigZag_Conversion.h" />
+    <ClInclude Include="007_Reverse_Integer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />

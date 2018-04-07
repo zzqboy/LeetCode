@@ -1,10 +1,9 @@
-#include "004_Median_of_Two_Sorted_Arrays.h"
-#include <iostream>
+#include "007_Reverse_Integer.h"
 
 int main()
 {
 	Solution test;
-	vector<int> a{1, 2}, b{ 6, 7 };
-	cout << test.findMedianSortedArrays(a, b) << endl;
+	int i = -123;
+	cout << test.reverse(i) << endl;
 	return 0;
 }
