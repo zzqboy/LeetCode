@@ -36,6 +36,12 @@
     <ClInclude Include="007_Reverse_Integer.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="009_Palindrome_Number.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="008_String_to_Integer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">

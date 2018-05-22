@@ -103,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -151,6 +152,8 @@
     <ClInclude Include="005_Longest_Palindromic_Substring.h" />
     <ClInclude Include="006_ZigZag_Conversion.h" />
     <ClInclude Include="007_Reverse_Integer.h" />
+    <ClInclude Include="008_String_to_Integer.h" />
+    <ClInclude Include="009_Palindrome_Number.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />

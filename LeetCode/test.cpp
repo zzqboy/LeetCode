@@ -1,9 +1,9 @@
-#include "007_Reverse_Integer.h"
+#include "008_String_to_Integer.h"
+#include <iostream>
+using namespace std;
 
 int main()
 {
 	Solution test;
-	int i = -123;
-	cout << test.reverse(i) << endl;
-	return 0;
+	cout << test.myAtoi("   -42");
 }
