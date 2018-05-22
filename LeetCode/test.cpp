@@ -5,5 +5,5 @@ using namespace std;
 int main()
 {
 	Solution test;
-	cout << test.myAtoi("   -42");
+	cout << test.myAtoi("-+1");
 }

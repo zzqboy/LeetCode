@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 // string to int
@@ -11,33 +12,34 @@ public:
 		int neg = 1;
 		int result = 0;
 
-		const char* str_c = str.c_str();
-		int length = strlen
+		int length = str.size();
 		int i = 0;
-		while(str_c[i++] == ' ')
+		while(str[i] == ' ' && i < length)
 		{
+			i++;
 			continue;
 		}
-		if (str_c[i] == '-')
+		if (str[i] == '-')
 		{
+			i++;
 			neg = -1;
 		}
-
+		else if (str[i] == '+')
+		{
+			i++;
+		}
 		for(; i < length; i++)
 		{
-			if (i <= '9' && i >= '0')
+			if (str[i] <= '9' && str[i] >= '0')
 			{
-				int i_n = i - '0';
-				if ((result > (INT_MAX / 10)) || (result == (INT_MAX / 10) && i_n >= 7))	// 这里的判断很容易出错
+				int i_n = str[i] - '0';
+				if (((result > (INT_MAX / 10)) || (result == (INT_MAX / 10) && i_n >= 7)) && (neg == 1))	// 这里的判断很容易出错
 				{
-					if (neg == 1)
-					{
-						return INT_MAX;
-					}
-					else
-					{
-						return INT_MIN;
-					}
+					return INT_MAX;
+				}
+				if (((result > (INT_MAX / 10)) || (result == (INT_MAX / 10) && i_n >= 8)) && (neg == -1))	// 这里的判断很容易出错
+				{
+					return INT_MIN;
 				}
 				result = result * 10;
 				result += i_n;
