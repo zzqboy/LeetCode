@@ -1,9 +1,9 @@
-#include "008_String_to_Integer.h"
 #include <iostream>
+#include "010_Regular_Expression_Matching.h"
 using namespace std;
 
 int main()
 {
 	Solution test;
-	cout << test.myAtoi("-+1");
+	cout << test.isMatch("ad", ".**");
 }

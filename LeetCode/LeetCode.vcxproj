@@ -154,6 +154,7 @@
     <ClInclude Include="007_Reverse_Integer.h" />
     <ClInclude Include="008_String_to_Integer.h" />
     <ClInclude Include="009_Palindrome_Number.h" />
+    <ClInclude Include="010_Regular_Expression_Matching.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />
