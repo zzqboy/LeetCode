@@ -45,6 +45,9 @@
     <ClInclude Include="010_Regular_Expression_Matching.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="011_Container_With_Most_Water.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">

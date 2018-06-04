@@ -1,58 +1,48 @@
-#pragma once
+﻿#pragma once
 #include <string>
 using namespace std;
+
+// 参考：https://www.jianshu.com/p/85f3e5a9fcda
+
 
 class Solution {
 public:
 	bool isMatch(string s, string p) {
-		int s_i = 0, p_i = 0, max_s_i = s.size(), max_p_i = p.size();
-		bool equal = false;
+		if (p.size() == 0 && s.size() == 0) return true;
+		if (p.size() == 0 && s.size() != 0) return false;
 
-		char *pre_char = NULL;
-		while (s_i < max_s_i && p_i < max_p_i)
+		if (p.size() == 1 && s.size() == 0) return false;
+		if (p.size() == 1)
 		{
-			if (p[p_i] == s[s_i])
+			if (p[0] == s[0] || p[0] == '.')
 			{
-				pre_char = &s[s_i];
-				p_i++, s_i++;
-				continue;
-			}
-			else if (p[p_i] == '.')
-			{
-				pre_char = &s[s_i];
-				p_i++, s_i++;
-				continue;
-			}
-			else if (p[p_i] == '*' && pre_char && *pre_char == s[s_i])
-			{
-				s_i++;
-				continue;
-			}
-			else if (p[p_i] == '*' && (p_i - 1) >= 0 && p[p_i-1] == '.')
-			{
-				s_i++;
-				continue;
+				return isMatch(s.substr(1), p.substr(1));
 			}
 			else
 			{
-				p_i++;
+				return false;
 			}
 		}
-		if (s_i == max_s_i)
+		if (p.size() > 1)
 		{
-			equal = true;
-			for (size_t i = p_i; i < max_p_i; i++)
+			if (p[1] != '*')
 			{
-				if (p[i] != '*')
+				if( s.size() != 0 && (s[0] == p[0] || p[0] == '.'))	return isMatch(s.substr(1), p.substr(1));
+				return false;
+			}
+			if (p[1] == '*')
+			{
+				if (s.size() != 0 && (s[0] == p[0] || p[0] == '.'))
 				{
-					if (p[i-1] == '*' && pre_char && p[i] == *pre_char)
-					{
-						continue;
-					}
-					equal = false;
+					if (isMatch(s, p.substr(2))) return true;
+					return isMatch(s.substr(1), p);
+				}
+				else
+				{
+					return isMatch(s, p.substr(2));
 				}
 			}
 		}
-		return equal;
+
 	}
 };

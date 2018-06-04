@@ -155,6 +155,7 @@
     <ClInclude Include="008_String_to_Integer.h" />
     <ClInclude Include="009_Palindrome_Number.h" />
     <ClInclude Include="010_Regular_Expression_Matching.h" />
+    <ClInclude Include="011_Container_With_Most_Water.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />
