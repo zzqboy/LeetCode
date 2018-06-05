@@ -157,6 +157,7 @@
     <ClInclude Include="010_Regular_Expression_Matching.h" />
     <ClInclude Include="011_Container_With_Most_Water.h" />
     <ClInclude Include="012_Integer_to_Roman.h" />
+    <ClInclude Include="013_Roman_to_Integer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />

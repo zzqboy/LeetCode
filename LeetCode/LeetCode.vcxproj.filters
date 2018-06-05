@@ -51,6 +51,9 @@
     <ClInclude Include="012_Integer_to_Roman.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="013_Roman_to_Integer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
