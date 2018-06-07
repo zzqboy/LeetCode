@@ -158,6 +158,7 @@
     <ClInclude Include="011_Container_With_Most_Water.h" />
     <ClInclude Include="012_Integer_to_Roman.h" />
     <ClInclude Include="013_Roman_to_Integer.h" />
+    <ClInclude Include="014_Longest_Common_Prefix.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />
