@@ -1,10 +1,10 @@
 #include <iostream>
-#include "014_Longest_Common_Prefix.h"
+#include "016_3Sum_Closest.h"
 using namespace std;
 
 int main()
 {
 	Solution test;
-	vector<string> a = { "flower","flow","flight" };
-	cout << test.longestCommonPrefix(a);
+	vector<int> t = {0, 2, 1, -3};
+	cout << test.threeSumClosest(t, 1);
 }
