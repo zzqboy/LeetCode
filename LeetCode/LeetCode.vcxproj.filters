@@ -63,6 +63,9 @@
     <ClInclude Include="016_3Sum_Closest.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="017_Letter Combinations of a Phone Number.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
