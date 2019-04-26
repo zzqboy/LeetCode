@@ -1,14 +1,13 @@
-﻿#include "018_4Sum.h"
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
+#include "022_generate_parentheses.h"
 using namespace std;
 
 
 int main(int argc, char *argv[]) 
 { 
 	Solution a;
-	vector<int> temp = { -2, 0, 0, 3, 3, -1 };
-	a.fourSum(temp, 5);
+	a.generateParenthesis(3);
 	cin.get();
 	return 0;
 }
