@@ -1,13 +1,13 @@
 ﻿#include <iostream>
 #include <vector>
-#include "022_generate_parentheses.h"
+#include "028_implement_strStr.h"
 using namespace std;
 
 
 int main(int argc, char *argv[]) 
 { 
 	Solution a;
-	a.generateParenthesis(3);
+	a.test();
 	cin.get();
 	return 0;
 }
